@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function Register() {
 
@@ -53,6 +53,7 @@ function Register() {
                             {error}
                         </div>}
                     </form>
+              <h3 className='text-white my-3 text-center'>Do You Have An Account ? <Link to="/login" className="nav-link">Login</Link></h3>
                 </div>
             </div>
         </>
